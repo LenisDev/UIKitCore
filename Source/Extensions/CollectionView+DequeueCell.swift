@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
 
     func dequeue<T: UICollectionViewCell> (_: T.Type,
                                            for indexPath: IndexPath) -> T {
