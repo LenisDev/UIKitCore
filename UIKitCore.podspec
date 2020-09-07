@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/LenisDev/UIKitCore'
   s.authors = { 'Manish Pandey' => '' }
   
-  s.source = { :git => 'https://github.com/LenisDev/UIKitCore', :tag => s.version }
+  s.source = { :git => 'https://github.com/LenisDev/UIKitCore.git', :tag => s.version }
   s.documentation_url = 'https://lenisdev.github.io/UIKitCore/index.html'
 
   s.ios.deployment_target = '11.0'
