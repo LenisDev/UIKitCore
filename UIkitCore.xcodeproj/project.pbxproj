@@ -10,6 +10,21 @@
 		1390A62E2506056800BFDAB7 /* UIkitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390A6242506056800BFDAB7 /* UIkitCore.framework */; };
 		1390A6332506056800BFDAB7 /* UIkitCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A6322506056800BFDAB7 /* UIkitCoreTests.swift */; };
 		1390A6352506056800BFDAB7 /* UIkitCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1390A6272506056800BFDAB7 /* UIkitCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1390A668250607AD00BFDAB7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A665250607AD00BFDAB7 /* BaseViewModel.swift */; };
+		1390A669250607AD00BFDAB7 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A666250607AD00BFDAB7 /* BaseCell.swift */; };
+		1390A66A250607AD00BFDAB7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A667250607AD00BFDAB7 /* BaseView.swift */; };
+		1390A674250607E400BFDAB7 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A66C250607E400BFDAB7 /* UIView+Radius.swift */; };
+		1390A675250607E400BFDAB7 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A66D250607E400BFDAB7 /* UIView+Anchors.swift */; };
+		1390A676250607E400BFDAB7 /* UIStackView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A66E250607E400BFDAB7 /* UIStackView+Init.swift */; };
+		1390A677250607E400BFDAB7 /* Number+UIEdgeInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A66F250607E400BFDAB7 /* Number+UIEdgeInset.swift */; };
+		1390A678250607E400BFDAB7 /* CollectionView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A670250607E400BFDAB7 /* CollectionView+RegisterCell.swift */; };
+		1390A679250607E400BFDAB7 /* CollectionView+DequeueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A671250607E400BFDAB7 /* CollectionView+DequeueCell.swift */; };
+		1390A67A250607E400BFDAB7 /* CALayer+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A672250607E400BFDAB7 /* CALayer+Border.swift */; };
+		1390A67B250607E400BFDAB7 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A673250607E400BFDAB7 /* UIView+Constraints.swift */; };
+		1390A6812506081B00BFDAB7 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A67D2506081B00BFDAB7 /* DesignableView.swift */; };
+		1390A6822506081B00BFDAB7 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A67E2506081B00BFDAB7 /* Stylable.swift */; };
+		1390A6832506081B00BFDAB7 /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A67F2506081B00BFDAB7 /* Radius.swift */; };
+		1390A6842506081B00BFDAB7 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A6802506081B00BFDAB7 /* Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +44,21 @@
 		1390A62D2506056800BFDAB7 /* UIkitCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIkitCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1390A6322506056800BFDAB7 /* UIkitCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkitCoreTests.swift; sourceTree = "<group>"; };
 		1390A6342506056800BFDAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1390A665250607AD00BFDAB7 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		1390A666250607AD00BFDAB7 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		1390A667250607AD00BFDAB7 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		1390A66C250607E400BFDAB7 /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
+		1390A66D250607E400BFDAB7 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		1390A66E250607E400BFDAB7 /* UIStackView+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Init.swift"; sourceTree = "<group>"; };
+		1390A66F250607E400BFDAB7 /* Number+UIEdgeInset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+UIEdgeInset.swift"; sourceTree = "<group>"; };
+		1390A670250607E400BFDAB7 /* CollectionView+RegisterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+RegisterCell.swift"; sourceTree = "<group>"; };
+		1390A671250607E400BFDAB7 /* CollectionView+DequeueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+DequeueCell.swift"; sourceTree = "<group>"; };
+		1390A672250607E400BFDAB7 /* CALayer+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Border.swift"; sourceTree = "<group>"; };
+		1390A673250607E400BFDAB7 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		1390A67D2506081B00BFDAB7 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		1390A67E2506081B00BFDAB7 /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
+		1390A67F2506081B00BFDAB7 /* Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
+		1390A6802506081B00BFDAB7 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +101,9 @@
 		1390A6262506056800BFDAB7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1390A67C2506080C00BFDAB7 /* Design */,
+				1390A66B250607D600BFDAB7 /* Extensions */,
+				1390A6642506079F00BFDAB7 /* MVVM */,
 				1390A65E250605FC00BFDAB7 /* Supporting Files */,
 			);
 			path = Source;
@@ -92,6 +125,42 @@
 				1390A6282506056800BFDAB7 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1390A6642506079F00BFDAB7 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				1390A666250607AD00BFDAB7 /* BaseCell.swift */,
+				1390A667250607AD00BFDAB7 /* BaseView.swift */,
+				1390A665250607AD00BFDAB7 /* BaseViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		1390A66B250607D600BFDAB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1390A672250607E400BFDAB7 /* CALayer+Border.swift */,
+				1390A671250607E400BFDAB7 /* CollectionView+DequeueCell.swift */,
+				1390A670250607E400BFDAB7 /* CollectionView+RegisterCell.swift */,
+				1390A66F250607E400BFDAB7 /* Number+UIEdgeInset.swift */,
+				1390A66E250607E400BFDAB7 /* UIStackView+Init.swift */,
+				1390A66D250607E400BFDAB7 /* UIView+Anchors.swift */,
+				1390A673250607E400BFDAB7 /* UIView+Constraints.swift */,
+				1390A66C250607E400BFDAB7 /* UIView+Radius.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1390A67C2506080C00BFDAB7 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				1390A6802506081B00BFDAB7 /* Border.swift */,
+				1390A67D2506081B00BFDAB7 /* DesignableView.swift */,
+				1390A67F2506081B00BFDAB7 /* Radius.swift */,
+				1390A67E2506081B00BFDAB7 /* Stylable.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +225,7 @@
 				TargetAttributes = {
 					1390A6232506056800BFDAB7 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					1390A62C2506056800BFDAB7 = {
 						CreatedOnToolsVersion = 11.7;
@@ -203,6 +273,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1390A66A250607AD00BFDAB7 /* BaseView.swift in Sources */,
+				1390A6842506081B00BFDAB7 /* Border.swift in Sources */,
+				1390A678250607E400BFDAB7 /* CollectionView+RegisterCell.swift in Sources */,
+				1390A669250607AD00BFDAB7 /* BaseCell.swift in Sources */,
+				1390A677250607E400BFDAB7 /* Number+UIEdgeInset.swift in Sources */,
+				1390A675250607E400BFDAB7 /* UIView+Anchors.swift in Sources */,
+				1390A67A250607E400BFDAB7 /* CALayer+Border.swift in Sources */,
+				1390A676250607E400BFDAB7 /* UIStackView+Init.swift in Sources */,
+				1390A679250607E400BFDAB7 /* CollectionView+DequeueCell.swift in Sources */,
+				1390A6812506081B00BFDAB7 /* DesignableView.swift in Sources */,
+				1390A674250607E400BFDAB7 /* UIView+Radius.swift in Sources */,
+				1390A67B250607E400BFDAB7 /* UIView+Constraints.swift in Sources */,
+				1390A6832506081B00BFDAB7 /* Radius.swift in Sources */,
+				1390A668250607AD00BFDAB7 /* BaseViewModel.swift in Sources */,
+				1390A6822506081B00BFDAB7 /* Stylable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +433,7 @@
 		1390A6392506056800BFDAB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -365,6 +451,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,6 +460,7 @@
 		1390A63A2506056800BFDAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -398,6 +486,7 @@
 		1390A63C2506056800BFDAB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIkitCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,6 +504,7 @@
 		1390A63D2506056800BFDAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIkitCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
