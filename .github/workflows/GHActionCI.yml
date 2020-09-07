@@ -17,4 +17,4 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_11.6.app
 
     - name: Build and test
-      run: xcodebuild clean build test -project UIKitCore.xcodeproj -scheme "UIKitCore" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      run: xcodebuild clean build test -project UIkitCore.xcodeproj -scheme "UIkitCore" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
