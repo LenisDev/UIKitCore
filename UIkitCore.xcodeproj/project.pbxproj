@@ -11,7 +11,7 @@
 		1390A6332506056800BFDAB7 /* UIkitCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A6322506056800BFDAB7 /* UIkitCoreTests.swift */; };
 		1390A6352506056800BFDAB7 /* UIkitCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1390A6272506056800BFDAB7 /* UIkitCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1390A668250607AD00BFDAB7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A665250607AD00BFDAB7 /* BaseViewModel.swift */; };
-		1390A669250607AD00BFDAB7 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A666250607AD00BFDAB7 /* BaseCell.swift */; };
+		1390A669250607AD00BFDAB7 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A666250607AD00BFDAB7 /* BaseCollectionViewCell.swift */; };
 		1390A66A250607AD00BFDAB7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A667250607AD00BFDAB7 /* BaseView.swift */; };
 		1390A674250607E400BFDAB7 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A66C250607E400BFDAB7 /* UIView+Radius.swift */; };
 		1390A675250607E400BFDAB7 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A66D250607E400BFDAB7 /* UIView+Anchors.swift */; };
@@ -25,6 +25,7 @@
 		1390A6822506081B00BFDAB7 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A67E2506081B00BFDAB7 /* Stylable.swift */; };
 		1390A6832506081B00BFDAB7 /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A67F2506081B00BFDAB7 /* Radius.swift */; };
 		1390A6842506081B00BFDAB7 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A6802506081B00BFDAB7 /* Border.swift */; };
+		1390A68625060BEA00BFDAB7 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A68525060BEA00BFDAB7 /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,7 @@
 		1390A6322506056800BFDAB7 /* UIkitCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIkitCoreTests.swift; sourceTree = "<group>"; };
 		1390A6342506056800BFDAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1390A665250607AD00BFDAB7 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		1390A666250607AD00BFDAB7 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		1390A666250607AD00BFDAB7 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		1390A667250607AD00BFDAB7 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		1390A66C250607E400BFDAB7 /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
 		1390A66D250607E400BFDAB7 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		1390A67E2506081B00BFDAB7 /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
 		1390A67F2506081B00BFDAB7 /* Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
 		1390A6802506081B00BFDAB7 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		1390A68525060BEA00BFDAB7 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +132,8 @@
 		1390A6642506079F00BFDAB7 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				1390A666250607AD00BFDAB7 /* BaseCell.swift */,
+				1390A666250607AD00BFDAB7 /* BaseCollectionViewCell.swift */,
+				1390A68525060BEA00BFDAB7 /* BaseTableViewCell.swift */,
 				1390A667250607AD00BFDAB7 /* BaseView.swift */,
 				1390A665250607AD00BFDAB7 /* BaseViewModel.swift */,
 			);
@@ -273,10 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1390A68625060BEA00BFDAB7 /* BaseTableViewCell.swift in Sources */,
 				1390A66A250607AD00BFDAB7 /* BaseView.swift in Sources */,
 				1390A6842506081B00BFDAB7 /* Border.swift in Sources */,
 				1390A678250607E400BFDAB7 /* CollectionView+RegisterCell.swift in Sources */,
-				1390A669250607AD00BFDAB7 /* BaseCell.swift in Sources */,
+				1390A669250607AD00BFDAB7 /* BaseCollectionViewCell.swift in Sources */,
 				1390A677250607E400BFDAB7 /* Number+UIEdgeInset.swift in Sources */,
 				1390A675250607E400BFDAB7 /* UIView+Anchors.swift in Sources */,
 				1390A67A250607E400BFDAB7 /* CALayer+Border.swift in Sources */,

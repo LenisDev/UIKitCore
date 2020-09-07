@@ -1,8 +1,8 @@
 //
-//  BaseCell.swift
-//  UIKitCore
+//  BaseTableViewCell.swift
+//  UIkitCore
 //
-//  Created by Manish on 25/08/20.
+//  Created by Manish on 07/09/20.
 //  Copyright © 2020 Manish. All rights reserved.
 //
 
@@ -21,7 +21,7 @@ import UIKit
 ///  - `rootView` should be considered as top view and all subview
 ///     at top level (hierarchy) should be added to `rootView`
 ///
-public class BaseCell<DATA: BaseViewModel>: UICollectionViewCell, DesignableView {
+public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableView {
 
     // MARK: - Properties
 
@@ -40,8 +40,8 @@ public class BaseCell<DATA: BaseViewModel>: UICollectionViewCell, DesignableView
     private(set) var rootView = UIView()
 
     // MARK: - Inits
-    public override init(frame: CGRect = .zero) {
-        super.init(frame: frame)
+    public init() {
+        super.init(style: .default, reuseIdentifier: nil)
 
         self.initialize()
     }
@@ -83,3 +83,4 @@ public class BaseCell<DATA: BaseViewModel>: UICollectionViewCell, DesignableView
     }
 
 }
+
