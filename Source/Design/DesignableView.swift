@@ -34,24 +34,24 @@ public protocol DesignableView: UIView {
     @discardableResult func style(_ style: Stylable) -> Self
 }
 
-extension DesignableView {
+public extension DesignableView {
 
     @discardableResult
-    public func bgColor(_ color: UIColor) -> Self {
+    func bgColor(_ color: UIColor) -> Self {
         self.backgroundColor = color
 
         return self
     }
 
     @discardableResult
-    public func tintColor(_ color: UIColor) -> Self {
+    func tintColor(_ color: UIColor) -> Self {
         self.tintColor = color
 
         return self
     }
 
     @discardableResult
-    public func border(_ value: Border) -> Self {
+    func border(_ value: Border) -> Self {
 
         // remove exisitng
         UIRectEdge.allEdgeProperties.forEach { edge in
@@ -67,7 +67,7 @@ extension DesignableView {
     }
 
     @discardableResult
-    public func radius(_ value: Radius) -> Self {
+    func radius(_ value: Radius) -> Self {
         value.corners.forEach { corner in
             self.add(radius: value.size, corner: corner)
         }
@@ -76,7 +76,7 @@ extension DesignableView {
     }
 
     @discardableResult
-    public func style(_ style: Stylable) -> Self {
+    func style(_ style: Stylable) -> Self {
 
         // bg color
         self.bgColor(style.bgColor)

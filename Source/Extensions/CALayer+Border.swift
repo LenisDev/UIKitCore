@@ -47,6 +47,6 @@ public extension CALayer {
 
 }
 
-extension UIRectEdge {
+public extension UIRectEdge {
     static var allEdgeProperties: [UIRectEdge] { [.top, .left, .bottom, .right, .all] }
 }
