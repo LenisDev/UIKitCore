@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BaseView Class Reference</title>
+    <title>BaseTableViewCell Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/BaseView" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/BaseTableViewCell" class="dashAnchor"></a>
 
-    <a title="BaseView Class Reference"></a>
+    <a title="BaseTableViewCell Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">UIKitCore Reference</a>
       <img class="carat" src="../img/carat.png" />
-      BaseView Class Reference
+      BaseTableViewCell Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -124,11 +124,11 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>BaseView</h1>
+            <h1>BaseTableViewCell</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BaseView</span><span class="o">&lt;</span><span class="kt">DATA</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="kt"><a href="../Protocols/DesignableView.html">DesignableView</a></span> <span class="k">where</span> <span class="kt">DATA</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/BaseViewModel.html">BaseViewModel</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BaseTableViewCell</span><span class="o">&lt;</span><span class="kt">DATA</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="kt"><a href="../Protocols/DesignableView.html">DesignableView</a></span> <span class="k">where</span> <span class="kt">DATA</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/BaseViewModel.html">BaseViewModel</a></span></code></pre>
 
                 </div>
               </div>
@@ -144,7 +144,7 @@ It confirms to DesignableView, that provides design related functionalities.</p>
 <h1 id='important' class='heading'>Important</h1>
 
 <ul>
-<li>Any view that  needs to designable and data driven, must use <code>BaseView</code> as it&rsquo;s parent class</li>
+<li>Any view that  needs to designable and data driven, must use <code><a href="../Classes/BaseView.html">BaseView</a></code> as it&rsquo;s parent class</li>
 <li><code>rootView</code> should be considered as top view and all subview
 at top level (hierarchy) should be added to <code>rootView</code></li>
 </ul>
@@ -168,9 +168,9 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9UIKitCore8BaseViewC4dataxvp"></a>
+                    <a name="/s:9UIKitCore17BaseTableViewCellC4dataxSgvp"></a>
                     <a name="//apple_ref/swift/Property/data" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC4dataxvp">data</a>
+                    <a class="token" href="#/s:9UIKitCore17BaseTableViewCellC4dataxSgvp">data</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -190,7 +190,7 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">DATA</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">DATA</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -200,9 +200,9 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9UIKitCore8BaseViewC04rootD0So6UIViewCvp"></a>
+                    <a name="/s:9UIKitCore17BaseTableViewCellC04rootE0So6UIViewCvp"></a>
                     <a name="//apple_ref/swift/Property/rootView" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC04rootD0So6UIViewCvp">rootView</a>
+                    <a class="token" href="#/s:9UIKitCore17BaseTableViewCellC04rootE0So6UIViewCvp">rootView</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -240,9 +240,9 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9UIKitCore8BaseViewC4dataACyxGx_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC4dataACyxGx_tcfc">init(data:<wbr>)</a>
+                    <a name="/s:9UIKitCore17BaseTableViewCellCACyxGycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9UIKitCore17BaseTableViewCellCACyxGycfc">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -256,7 +256,7 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">DATA</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -266,9 +266,9 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9UIKitCore8BaseViewC5coderACyxGSgSo7NSCoderC_tcfc"></a>
+                    <a name="/s:9UIKitCore17BaseTableViewCellC5coderACyxGSgSo7NSCoderC_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC5coderACyxGSgSo7NSCoderC_tcfc">init(coder:<wbr>)</a>
+                    <a class="token" href="#/s:9UIKitCore17BaseTableViewCellC5coderACyxGSgSo7NSCoderC_tcfc">init(coder:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -305,35 +305,9 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9UIKitCore8BaseViewC10initializeyyF"></a>
-                    <a name="//apple_ref/swift/Method/initialize()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC10initializeyyF">initialize()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">initialize</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9UIKitCore8BaseViewC10setupViewsyyF"></a>
+                    <a name="/s:9UIKitCore17BaseTableViewCellC10setupViewsyyF"></a>
                     <a name="//apple_ref/swift/Method/setupViews()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC10setupViewsyyF">setupViews()</a>
+                    <a class="token" href="#/s:9UIKitCore17BaseTableViewCellC10setupViewsyyF">setupViews()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -363,9 +337,9 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9UIKitCore8BaseViewC9setupDatayyF"></a>
+                    <a name="/s:9UIKitCore17BaseTableViewCellC9setupDatayyF"></a>
                     <a name="//apple_ref/swift/Method/setupData()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC9setupDatayyF">setupData()</a>
+                    <a class="token" href="#/s:9UIKitCore17BaseTableViewCellC9setupDatayyF">setupData()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -395,32 +369,6 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9UIKitCore8BaseViewC14layoutSubviewsyyF"></a>
-                    <a name="//apple_ref/swift/Method/layoutSubviews()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore8BaseViewC14layoutSubviewsyyF">layoutSubviews()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">layoutSubviews</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:9UIKitCore14DesignableViewP9tintColoryxSo7UIColorCF"></a>
                     <a name="//apple_ref/swift/Method/tintColor(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:9UIKitCore14DesignableViewP9tintColoryxSo7UIColorCF">tintColor(_:<wbr>)</a>
@@ -439,33 +387,6 @@ at top level (hierarchy) should be added to <code>rootView</code></li>
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">tintColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9UIKitCore14DesignableViewP5styleyxAA8Stylable_pF"></a>
-                    <a name="//apple_ref/swift/Method/style(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9UIKitCore14DesignableViewP5styleyxAA8Stylable_pF">style(_:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">style</span><span class="p">(</span><span class="n">_</span> <span class="nv">style</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Stylable.html">Stylable</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
 
                         </div>
                       </div>
