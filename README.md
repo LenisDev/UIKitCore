@@ -50,7 +50,7 @@ Step 1:
 Add following to your CartFile
 
 ```
-github "LenisDev/UIKitCore" ~> 0.0.1
+github "LenisDev/UIKitCore" ~> 0.0.2
 ```
 
 Step 2:
@@ -63,11 +63,11 @@ run `carthage update` from current project directory.
 #### CocoaPods
 
 Step 1:
-Add `pod 'UIKitCore', '~> 0.0.1'` to your Podfile:
+Add `pod 'UIKitCore', '~> 0.0.2'` to your Podfile:
 
 ```
 target 'MyApp' do
-  pod 'UIKitCore', '~> 0.0.1'
+  pod 'UIKitCore', '~> 0.0.2'
 end
 ```
 
@@ -91,7 +91,7 @@ run `pod install` from current project directory.
 #### Swift Package Manager
 ```
 dependencies: [
-    .package(url: "https://github.com/LenisDev/UIKitCore.git", .upToNextMajor(from: "0.0.1"))
+    .package(url: "https://github.com/LenisDev/UIKitCore.git", .upToNextMajor(from: "0.0.2"))
 ]
 ```
 
