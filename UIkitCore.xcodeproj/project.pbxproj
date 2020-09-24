@@ -31,6 +31,7 @@
 		1396559F251CD47E005E0B17 /* UIView+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1396559E251CD47E005E0B17 /* UIView+Rotate.swift */; };
 		139655A3251CD4A4005E0B17 /* Number+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139655A2251CD4A4005E0B17 /* Number+Angle.swift */; };
 		139655AA251CD4F7005E0B17 /* UIImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139655A9251CD4F7005E0B17 /* UIImage+Rotate.swift */; };
+		139655B4251CD55B005E0B17 /* String+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139655B3251CD55B005E0B17 /* String+Separator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		1396559E251CD47E005E0B17 /* UIView+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rotate.swift"; sourceTree = "<group>"; };
 		139655A2251CD4A4005E0B17 /* Number+Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Angle.swift"; sourceTree = "<group>"; };
 		139655A9251CD4F7005E0B17 /* UIImage+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotate.swift"; sourceTree = "<group>"; };
+		139655B3251CD55B005E0B17 /* String+Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				1390A68725063D7300BFDAB7 /* CollectionView */,
 				1390A672250607E400BFDAB7 /* CALayer+Border.swift */,
 				1390A66F250607E400BFDAB7 /* Number+UIEdgeInset.swift */,
+				139655B3251CD55B005E0B17 /* String+Separator.swift */,
 				1390A66E250607E400BFDAB7 /* UIStackView+Init.swift */,
 				1396559E251CD47E005E0B17 /* UIView+Rotate.swift */,
 				139655A2251CD4A4005E0B17 /* Number+Angle.swift */,
@@ -313,6 +316,7 @@
 				1390A6842506081B00BFDAB7 /* Border.swift in Sources */,
 				1390A678250607E400BFDAB7 /* CollectionView+RegisterCell.swift in Sources */,
 				139655A3251CD4A4005E0B17 /* Number+Angle.swift in Sources */,
+				139655B4251CD55B005E0B17 /* String+Separator.swift in Sources */,
 				1390A669250607AD00BFDAB7 /* BaseCollectionViewCell.swift in Sources */,
 				1390A68A25063D9900BFDAB7 /* TableViewCell+Register.swift in Sources */,
 				1390A677250607E400BFDAB7 /* Number+UIEdgeInset.swift in Sources */,
