@@ -40,17 +40,6 @@ open class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableVi
     public let rootView = UIView()
     public var rootViewMargin: UIEdgeInsets = .zero
 
-    // MARK: - Inits
-    public init() {
-        super.init(style: .default, reuseIdentifier: nil)
-
-        self.initialize()
-    }
-
-    required public init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
     // MARK: - Setups
     private func initialize() {
         self.setupViews()

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		134D3AA6251D04940036AB46 /* BaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D3AA5251D04940036AB46 /* BaseDelegate.swift */; };
+		134D3B29251D11880036AB46 /* SafeOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D3B28251D11880036AB46 /* SafeOptional.swift */; };
 		1390A62E2506056800BFDAB7 /* UIkitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390A6242506056800BFDAB7 /* UIkitCore.framework */; };
 		1390A6332506056800BFDAB7 /* UIkitCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A6322506056800BFDAB7 /* UIkitCoreTests.swift */; };
 		1390A6352506056800BFDAB7 /* UIkitCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1390A6272506056800BFDAB7 /* UIkitCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		134D3AA5251D04940036AB46 /* BaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
+		134D3B28251D11880036AB46 /* SafeOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeOptional.swift; sourceTree = "<group>"; };
 		1390A6242506056800BFDAB7 /* UIkitCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIkitCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1390A6272506056800BFDAB7 /* UIkitCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIkitCore.h; sourceTree = "<group>"; };
 		1390A6282506056800BFDAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				1390A66B250607D600BFDAB7 /* Extensions */,
 				1390A6642506079F00BFDAB7 /* MVVM */,
 				1390A65E250605FC00BFDAB7 /* Supporting Files */,
+				134D3B28251D11880036AB46 /* SafeOptional.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				1390A676250607E400BFDAB7 /* UIStackView+Init.swift in Sources */,
 				1390A679250607E400BFDAB7 /* CollectionView+DequeueCell.swift in Sources */,
 				1390A6812506081B00BFDAB7 /* DesignableView.swift in Sources */,
+				134D3B29251D11880036AB46 /* SafeOptional.swift in Sources */,
 				1390A674250607E400BFDAB7 /* UIView+Radius.swift in Sources */,
 				1390A67B250607E400BFDAB7 /* UIView+Constraints.swift in Sources */,
 				134D3AA6251D04940036AB46 /* BaseDelegate.swift in Sources */,

@@ -39,17 +39,6 @@ open class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, De
     /// Top view
     public let rootView = UIView()
 
-    // MARK: - Inits
-    public override init(frame: CGRect = .zero) {
-        super.init(frame: frame)
-
-        self.initialize()
-    }
-
-    required public init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
     // MARK: - Setups
     private func initialize() {
         self.setupViews()
