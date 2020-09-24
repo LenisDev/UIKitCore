@@ -32,6 +32,7 @@
 		139655A3251CD4A4005E0B17 /* Number+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139655A2251CD4A4005E0B17 /* Number+Angle.swift */; };
 		139655AA251CD4F7005E0B17 /* UIImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139655A9251CD4F7005E0B17 /* UIImage+Rotate.swift */; };
 		139655B4251CD55B005E0B17 /* String+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139655B3251CD55B005E0B17 /* String+Separator.swift */; };
+		139655BB251CD5E1005E0B17 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139655BA251CD5E1005E0B17 /* UIView+Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		139655A2251CD4A4005E0B17 /* Number+Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Angle.swift"; sourceTree = "<group>"; };
 		139655A9251CD4F7005E0B17 /* UIImage+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotate.swift"; sourceTree = "<group>"; };
 		139655B3251CD55B005E0B17 /* String+Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separator.swift"; sourceTree = "<group>"; };
+		139655BA251CD5E1005E0B17 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				1390A68825063D8000BFDAB7 /* TableView */,
 				1390A68725063D7300BFDAB7 /* CollectionView */,
 				1390A672250607E400BFDAB7 /* CALayer+Border.swift */,
+				139655BA251CD5E1005E0B17 /* UIView+Border.swift */,
 				1390A66F250607E400BFDAB7 /* Number+UIEdgeInset.swift */,
 				139655B3251CD55B005E0B17 /* String+Separator.swift */,
 				1390A66E250607E400BFDAB7 /* UIStackView+Init.swift */,
@@ -314,6 +317,7 @@
 				1390A68625060BEA00BFDAB7 /* BaseTableViewCell.swift in Sources */,
 				1390A66A250607AD00BFDAB7 /* BaseView.swift in Sources */,
 				1390A6842506081B00BFDAB7 /* Border.swift in Sources */,
+				139655BB251CD5E1005E0B17 /* UIView+Border.swift in Sources */,
 				1390A678250607E400BFDAB7 /* CollectionView+RegisterCell.swift in Sources */,
 				139655A3251CD4A4005E0B17 /* Number+Angle.swift in Sources */,
 				139655B4251CD55B005E0B17 /* String+Separator.swift in Sources */,
