@@ -21,7 +21,7 @@ import UIKit
 ///  - `rootView` should be considered as top view and all subview
 ///     at top level (hierarchy) should be added to `rootView`
 ///
-public class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
+open class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
 
     // MARK: - Properties
 
@@ -30,7 +30,7 @@ public class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Everytime data is set, view will reset
     ///
-    var data: DATA {
+    open var data: DATA {
         didSet {
             self.initialize()
         }
@@ -50,7 +50,7 @@ public class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
         self.initialize()
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -65,7 +65,7 @@ public class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Called when data is set
     ///
-    func setupViews() {
+    open func setupViews() {
         self.rootView.subviews.forEach { $0.removeFromSuperview() }
         self.rootView.sameSize(as: self)
     }
@@ -75,7 +75,7 @@ public class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Called when data is set
     ///
-    func setupData() {
+    open func setupData() {
 
     }
 

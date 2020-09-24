@@ -21,7 +21,7 @@ import UIKit
 ///  - `rootView` should be considered as top view and all subview
 ///     at top level (hierarchy) should be added to `rootView`
 ///
-public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableView {
+open class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableView {
 
     // MARK: - Properties
 
@@ -30,7 +30,7 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
     /// # Important
     /// - Everytime data is set, view will reset
     ///
-    var data: DATA? {
+    open var data: DATA? {
         didSet {
             self.initialize()
         }
@@ -38,6 +38,7 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
 
     /// Top view
     private(set) var rootView = UIView()
+    public var rootViewMargin: UIEdgeInsets = .zero
 
     // MARK: - Inits
     public init() {
@@ -46,7 +47,7 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
         self.initialize()
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -61,9 +62,9 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
     /// # Important
     /// - Called when data is set
     ///
-    func setupViews() {
+    open func setupViews() {
         self.rootView.subviews.forEach { $0.removeFromSuperview() }
-        self.rootView.sameSize(as: self)
+        self.rootView.sameSize(as: contentView, margin: rootViewMargin)
     }
 
     /// Used to setup data on views
@@ -71,7 +72,7 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
     /// # Important
     /// - Called when data is set
     ///
-    func setupData() {
+    open func setupData() {
 
     }
 
