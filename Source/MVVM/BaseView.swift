@@ -65,7 +65,7 @@ open class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Called when data is set
     ///
-    public func setupViews() {
+    open func setupViews() {
         self.rootView.subviews.forEach { $0.removeFromSuperview() }
         self.rootView.sameSize(as: self)
     }
@@ -75,7 +75,7 @@ open class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Called when data is set
     ///
-    public func setupData() {
+    open func setupData() {
 
     }
 
