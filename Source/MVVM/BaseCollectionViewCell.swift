@@ -30,7 +30,7 @@ open class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, De
     /// # Important
     /// - Everytime data is set, view will reset
     ///
-    open var data: DATA? {
+    public var data: DATA? {
         didSet {
             self.initialize()
         }
@@ -61,7 +61,7 @@ open class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, De
     /// # Important
     /// - Called when data is set
     ///
-    open func setupViews() {
+    public func setupViews() {
         self.rootView.subviews.forEach { $0.removeFromSuperview() }
         self.rootView.sameSize(as: self)
     }
@@ -71,7 +71,7 @@ open class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, De
     /// # Important
     /// - Called when data is set
     ///
-    open func setupData() {
+    public func setupData() {
 
     }
 
