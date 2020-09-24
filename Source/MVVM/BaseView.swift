@@ -37,7 +37,7 @@ open class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     }
 
     /// Top view
-    private(set) var rootView = UIView()
+    public let rootView = UIView()
 
     private var style: Stylable?
 
