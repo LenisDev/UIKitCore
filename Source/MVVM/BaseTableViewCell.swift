@@ -37,7 +37,7 @@ open class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableVi
     }
 
     /// Top view
-    private(set) var rootView = UIView()
+    public let rootView = UIView()
     public var rootViewMargin: UIEdgeInsets = .zero
 
     // MARK: - Inits

@@ -37,7 +37,7 @@ open class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, De
     }
 
     /// Top view
-    private(set) var rootView = UIView()
+    public let rootView = UIView()
 
     // MARK: - Inits
     public override init(frame: CGRect = .zero) {
