@@ -21,7 +21,7 @@ import UIKit
 ///  - `rootView` should be considered as top view and all subview
 ///     at top level (hierarchy) should be added to `rootView`
 ///
-public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableView {
+open class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableView {
 
     // MARK: - Properties
 
@@ -47,7 +47,7 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
         self.initialize()
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

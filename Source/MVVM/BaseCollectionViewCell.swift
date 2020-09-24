@@ -21,7 +21,7 @@ import UIKit
 ///  - `rootView` should be considered as top view and all subview
 ///     at top level (hierarchy) should be added to `rootView`
 ///
-public class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, DesignableView {
+open class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, DesignableView {
 
     // MARK: - Properties
 
@@ -46,7 +46,7 @@ public class BaseCollectionViewCell<DATA: BaseViewModel>: UICollectionViewCell, 
         self.initialize()
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
