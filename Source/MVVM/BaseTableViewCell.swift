@@ -38,6 +38,7 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
 
     /// Top view
     private(set) var rootView = UIView()
+    public var rootViewMargin: UIEdgeInsets = .zero
 
     // MARK: - Inits
     public init() {
@@ -63,7 +64,7 @@ public class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, Designable
     ///
     func setupViews() {
         self.rootView.subviews.forEach { $0.removeFromSuperview() }
-        self.rootView.sameSize(as: self)
+        self.rootView.sameSize(as: contentView, margin: rootViewMargin)
     }
 
     /// Used to setup data on views

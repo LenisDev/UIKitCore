@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134D3AA6251D04940036AB46 /* BaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D3AA5251D04940036AB46 /* BaseDelegate.swift */; };
 		1390A62E2506056800BFDAB7 /* UIkitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390A6242506056800BFDAB7 /* UIkitCore.framework */; };
 		1390A6332506056800BFDAB7 /* UIkitCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390A6322506056800BFDAB7 /* UIkitCoreTests.swift */; };
 		1390A6352506056800BFDAB7 /* UIkitCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1390A6272506056800BFDAB7 /* UIkitCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		134D3AA5251D04940036AB46 /* BaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
 		1390A6242506056800BFDAB7 /* UIkitCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIkitCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1390A6272506056800BFDAB7 /* UIkitCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIkitCore.h; sourceTree = "<group>"; };
 		1390A6282506056800BFDAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				1390A68525060BEA00BFDAB7 /* BaseTableViewCell.swift */,
 				1390A667250607AD00BFDAB7 /* BaseView.swift */,
 				1390A665250607AD00BFDAB7 /* BaseViewModel.swift */,
+				134D3AA5251D04940036AB46 /* BaseDelegate.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				1390A6812506081B00BFDAB7 /* DesignableView.swift in Sources */,
 				1390A674250607E400BFDAB7 /* UIView+Radius.swift in Sources */,
 				1390A67B250607E400BFDAB7 /* UIView+Constraints.swift in Sources */,
+				134D3AA6251D04940036AB46 /* BaseDelegate.swift in Sources */,
 				1396559F251CD47E005E0B17 /* UIView+Rotate.swift in Sources */,
 				1390A6832506081B00BFDAB7 /* Radius.swift in Sources */,
 				1390A668250607AD00BFDAB7 /* BaseViewModel.swift in Sources */,
