@@ -30,7 +30,7 @@ open class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableVi
     /// # Important
     /// - Everytime data is set, view will reset
     ///
-    var data: DATA? {
+    open var data: DATA? {
         didSet {
             self.initialize()
         }
@@ -62,7 +62,7 @@ open class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableVi
     /// # Important
     /// - Called when data is set
     ///
-    func setupViews() {
+    open func setupViews() {
         self.rootView.subviews.forEach { $0.removeFromSuperview() }
         self.rootView.sameSize(as: contentView, margin: rootViewMargin)
     }
@@ -72,7 +72,7 @@ open class BaseTableViewCell<DATA: BaseViewModel>: UITableViewCell, DesignableVi
     /// # Important
     /// - Called when data is set
     ///
-    func setupData() {
+    open func setupData() {
 
     }
 

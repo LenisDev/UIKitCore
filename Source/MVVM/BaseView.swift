@@ -30,7 +30,7 @@ open class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Everytime data is set, view will reset
     ///
-    var data: DATA {
+    open var data: DATA {
         didSet {
             self.initialize()
         }
@@ -65,7 +65,7 @@ open class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Called when data is set
     ///
-    func setupViews() {
+    open func setupViews() {
         self.rootView.subviews.forEach { $0.removeFromSuperview() }
         self.rootView.sameSize(as: self)
     }
@@ -75,7 +75,7 @@ open class BaseView<DATA: BaseViewModel>: UIView, DesignableView {
     /// # Important
     /// - Called when data is set
     ///
-    func setupData() {
+    open func setupData() {
 
     }
 
