@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - Anchors
-extension UIView {
+public extension UIView {
 
     @discardableResult
     func top(of anchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, margin: CGFloat = 0) -> Self {

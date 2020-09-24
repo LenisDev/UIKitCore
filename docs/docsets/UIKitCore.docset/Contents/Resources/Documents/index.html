@@ -20,7 +20,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          UIKitCore 0.0.1 Docs
+          UIKitCore 0.0.3 Docs
         </a>
          (100% documented)
       </p>
@@ -53,10 +53,21 @@
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/BaseCell.html">BaseCell</a>
+                <a class="nav-group-task-link" href="Classes/BaseCollectionViewCell.html">BaseCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BaseTableViewCell.html">BaseTableViewCell</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/BaseView.html">BaseView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Separator.html">Separator</a>
               </li>
             </ul>
           </li>
@@ -73,13 +84,22 @@
                 <a class="nav-group-task-link" href="Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIImage.html">UIImage</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UIRectEdge.html">UIRectEdge</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UIStackView.html">UIStackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UITableView.html">UITableView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UIView.html">UIView</a>
@@ -118,9 +138,104 @@
         <section class="section">
           <div class="section-content top-matter">
             
-            <h1 id='uikitcore' class='heading'>UIKitCore</h1>
+            <p><img src="./Logo.png" alt="Project Logo"></p>
+
+<p><img src="https://img.shields.io/github/license/LenisDev/UIKitCore" alt="License MIT">
+<img src="https://github.com/LenisDev/UIKitCore/workflows/GHActionCI/badge.svg" alt="CI Tests">
+<img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat%22" alt="Carthage compatibility">
+<img src="https://img.shields.io/cocoapods/v/UIKitCore.svg" alt="pod">
+<img src="https://img.shields.io/cocoapods/p/UIKitCore" alt="Plateform compatibility"></p>
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#installation-guide">Installation Guide</a></li>
+<li><a href="https://lenisdev.github.io/UIKitCore/index.html">Full Documentation</a></li>
+<li><a href="#contribute">Contribute</a></li>
+</ul>
+<h3 id='overview' class='heading'>Overview</h3>
 
 <p>Base MVVM, helper functions and extensions</p>
+
+<p>Checkout <a href="https://github.com/LenisDev/FloatingInput/tree/master/Examples">example project</a></p>
+<h3 id='usage' class='heading'>Usage</h3>
+<pre class="highlight swift"><code>
+  <span class="c1">// Step 1 - Import</span>
+  <span class="kd">import</span> <span class="kt">UIKitCore</span>
+
+  <span class="c1">// Step 2 - Use</span>
+  <span class="c1">// constraints</span>
+  <span class="n">myLabel</span>
+    <span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">parentView</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">parentView</span><span class="o">.</span><span class="n">centerX</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">centerY</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">parentView</span><span class="o">.</span><span class="n">centerY</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">with</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">100</span><span class="p">)</span>
+
+  <span class="c1">// extensions</span>
+  <span class="n">myView</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="nf">border</span><span class="p">(</span><span class="o">.</span><span class="n">gray</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">edge</span><span class="p">:</span> <span class="o">.</span><span class="n">all</span><span class="p">)</span>
+
+  <span class="c1">// register cells</span>
+  <span class="n">myCollectionView</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="kt">CustomCell</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+
+</code></pre>
+
+<p>checkout <a href="https://lenisdev.github.io/UIKitCore/Extensions.html">extensions</a> for more</p>
+
+<p><br></p>
+<h3 id='installation-guide' class='heading'>Installation Guide</h3>
+<h4 id='carthage' class='heading'>Carthage</h4>
+
+<p>Step 1: 
+Add following to your CartFile</p>
+<pre class="highlight plaintext"><code>github "LenisDev/UIKitCore" ~&gt; 0.0.3
+</code></pre>
+
+<p>Step 2:
+run <code>carthage update</code> from current project directory.</p>
+
+<p><em>That&rsquo;s all, you have it installed.</em></p>
+
+<p><br></p>
+<h4 id='cocoapods' class='heading'>CocoaPods</h4>
+
+<p>Step 1:
+Add <code>pod &#39;UIKitCore&#39;, &#39;~&gt; 0.0.3&#39;</code> to your Podfile:</p>
+<pre class="highlight plaintext"><code>target 'MyApp' do
+  pod 'UIKitCore', '~&gt; 0.0.3'
+end
+</code></pre>
+
+<p>Step 2:
+run <code>pod install</code> from current project directory.</p>
+
+<p><em>That&rsquo;s all, you have it installed.</em></p>
+
+<p><br></p>
+
+<blockquote>
+<p>Try it using following command</p>
+<pre class="highlight plaintext"><code>pod try UIKitCore
+</code></pre>
+</blockquote>
+
+<p><br></p>
+<h4 id='swift-package-manager' class='heading'>Swift Package Manager</h4>
+<pre class="highlight plaintext"><code>dependencies: [
+    .package(url: "https://github.com/LenisDev/UIKitCore.git", .upToNextMajor(from: "0.0.3"))
+]
+</code></pre>
+
+<p><br></p>
+<h3 id='contribute' class='heading'>Contribute</h3>
+
+<blockquote>
+
+<ul>
+<li>Play around and report bugs</li>
+<li>Fix issues and create PR</li>
+<li>Add documentations and new features</li>
+</ul>
+</blockquote>
 
           </div>
         </section>
@@ -129,7 +244,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://github.com/LenisDev/UIKitCore" target="_blank" rel="external">Manish</a>. All rights reserved. (Last updated: 2020-09-07)</p>
+      <p>&copy; 2020 <a class="link" href="https://github.com/LenisDev/UIKitCore" target="_blank" rel="external">Manish</a>. All rights reserved. (Last updated: 2020-09-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
