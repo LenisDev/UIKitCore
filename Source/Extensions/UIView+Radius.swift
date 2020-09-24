@@ -34,3 +34,16 @@ public extension UIView {
     }
 
 }
+
+public extension UIView {
+
+    func add(radius: CGFloat) {
+        self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
+    }
+
+    func roundedCorner() {
+        self.add(radius: self.frame.height / 2)
+    }
+
+}
